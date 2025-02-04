@@ -226,8 +226,6 @@
 
       </div>
 
-    </section><!-- /Resume Section -->
-
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
       <div class="container section-title" data-aos="fade-up">
@@ -236,12 +234,11 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="row gy-4">
-          
+        <div class="row">
           <!-- Project 1: Superconducting Qubits -->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <a href="/project-superconducting" class="project-link">
-              <div id="qubit-main-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <div id="qubit-main-carousel" class="carousel slide overlay-container" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="assets/img/portfolio/sc1.jpg" class="d-block w-100" alt="Superconducting Qubits">
@@ -256,9 +253,25 @@
                     <img src="assets/img/portfolio/sc4.jpg" class="d-block w-100" alt="Qubit Circuit">
                   </div>
                 </div>
-                <div class="overlay-text">
-                  <h3>Superconducting qubits and TLS</h3>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#qubit-main-carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#qubit-main-carousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#qubit-main-carousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#qubit-main-carousel" data-bs-slide-to="3"></button>
                 </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#qubit-main-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#qubit-main-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div class="overlay-text">Superconducting qubits and TLS</div>
               </div>
             </a>
           </div>
@@ -266,7 +279,7 @@
           <!-- Project 2: MATBG & MAT4G Josephson Junctions -->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <a href="/project-matbg" class="project-link">
-              <div id="matbg-main-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <div id="matbg-main-carousel" class="carousel slide overlay-container" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="assets/img/portfolio/m1.jpg" class="d-block w-100" alt="MATBG Josephson Junctions">
@@ -281,9 +294,25 @@
                     <img src="assets/img/portfolio/m4.jpg" class="d-block w-100" alt="MAT4G Setup">
                   </div>
                 </div>
-                <div class="overlay-text">
-                  <h3>MATBG & MAT4G Josephson Junctions</h3>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#matbg-main-carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#matbg-main-carousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#matbg-main-carousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#matbg-main-carousel" data-bs-slide-to="3"></button>
                 </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#matbg-main-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#matbg-main-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div class="overlay-text">MATBG & MAT4G Josephson Junctions</div>
               </div>
             </a>
           </div>
@@ -291,7 +320,7 @@
           <!-- Project 3: YBCO High-Temperature Superconductor -->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <a href="/project-ybco" class="project-link">
-              <div id="ybco-main-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <div id="ybco-main-carousel" class="carousel slide overlay-container" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="assets/img/portfolio/yb1.jpg" class="d-block w-100" alt="YBCO Superconductor">
@@ -300,16 +329,31 @@
                     <img src="assets/img/portfolio/yb2.jpg" class="d-block w-100" alt="YBCO Experiment">
                   </div>
                 </div>
-                <div class="overlay-text">
-                  <h3>YBCO High-Temperature Superconductor</h3>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#ybco-main-carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#ybco-main-carousel" data-bs-slide-to="1"></button>
                 </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ybco-main-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ybco-main-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div class="overlay-text">YBCO High-Temperature Superconductor</div>
               </div>
             </a>
           </div>
-
         </div>
       </div>
     </section>
+
+
 
 
 
@@ -362,29 +406,23 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/xgvoyqlw" method="POST" class="php-email-form">
               <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-
+                  <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-md-12">
+                      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                  </div>
+                  <div class="col-md-12">
+                      <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                      <button type="submit">Send Message</button>
+                  </div>
               </div>
             </form>
           </div><!-- End Contact Form -->

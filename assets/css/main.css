@@ -1197,72 +1197,88 @@ section,
   color: var(--default-color);
 }
 
-/* Portfolio Item Container */
+/* Portfolio Item Styling */
 .portfolio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Overlay Container for Carousels */
+.overlay-container {
   position: relative;
+  width: 100%;
+  max-width: 400px; /* Max width for square */
+  aspect-ratio: 1; /* Ensures square shape */
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
 
-.portfolio-item img {
+/* Image Resizing */
+.overlay-container img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Scales and crops the image appropriately */
   transition: transform 0.3s ease;
 }
 
-/* Image Scaling on Hover */
-.portfolio-item:hover img {
+/* Hover Effect for Image Scaling */
+.overlay-container:hover img {
   transform: scale(1.1);
 }
 
-/* Overlay Text for Title */
+/* Overlay Text Styling */
 .overlay-text {
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(219, 225, 228, 0.985);
-  color: rgb(255, 255, 255);
-  padding: 10px 15px;
-  font-size: 1.2rem;
+  transform: translateX(-50%);
+  background: rgba(32, 31, 31, 0.8); /* Semi-transparent background */
+  color: rgb(228, 226, 226);
+  padding: 8px 12px;
+  font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
-  opacity: 0;
+  opacity: 0.1;
   transition: opacity 0.3s ease;
-  border-radius: 5px;
-  width: 80%;
+  border-radius: 15px;
+  width: 90%;
 }
 
-.portfolio-item:hover .overlay-text {
+.overlay-container:hover .overlay-text {
   opacity: 1;
 }
 
-/* Carousel Styling for Individual Project */
-.portfolio-item .carousel {
-  border-radius: 10px;
+/* Carousel Styling for Sliding Images */
+.carousel {
+  width: 100%;
+  height: 100%;
 }
 
-.portfolio-item .carousel img {
+.carousel img {
   border-radius: 10px;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .portfolio-item {
-    margin-bottom: 20px;
+  .overlay-container {
+    max-width: 250px;
   }
 
   .overlay-text {
     font-size: 1rem;
-    padding: 8px 12px;
+    padding: 6px 10px;
     width: 90%;
   }
 }
 
 @media (max-width: 576px) {
+  .overlay-container {
+    max-width: 200px;
+  }
+
   .portfolio-title h2 {
     font-size: 28px;
   }
@@ -1270,5 +1286,23 @@ section,
   .portfolio-title p {
     font-size: 14px;
   }
+}
+/* Adjusts position and appearance of carousel dots */
+.carousel-indicators {
+  bottom: -15px; /* Moves the dots lower */
+}
+
+.carousel-indicators button {
+  background-color: rgba(255, 255, 255, 0.5); /* Light gray dots */
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 4px; /* Adds spacing between dots */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-indicators .active {
+  background-color: rgba(255, 255, 255, 0.9); /* White when active */
 }
 
